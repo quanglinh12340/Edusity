@@ -8,6 +8,7 @@ const cx = classNames.bind(styles);
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,10 +20,14 @@ const Navbar = () => {
     };
   }, []);
 
+  const toggleMenu = () => {
+    mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
+  };
+
   return (
     <nav className={cx("container", `${sticky ? "dark-nav" : " "}`)}>
       <img src={assets.logo} className={cx("logo")} />
-      <ul>
+      <ul className={cx(mobileMenu ? "" : "hide-mobile-menu")}>
         <li>
           {" "}
           <Link to="hero" smooth={true} offset={50} duration={500}>
@@ -66,6 +71,11 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+      <img
+        src={assets.menu_icon}
+        className={cx("menu-icon")}
+        onClick={toggleMenu}
+      />
     </nav>
   );
 };
