@@ -25,7 +25,7 @@ import user_2 from "./user-2.png";
 import user_3 from "./user-3.png";
 import user_4 from "./user-4.png";
 import white_arrow from "./white-arrow.png";
-
+import video from "./video.mp4";
 export const assets = {
   about,
   back_icon,
@@ -54,4 +54,5 @@ export const assets = {
   user_3,
   user_4,
   white_arrow,
+  video,
 };
