@@ -4,12 +4,18 @@ import { assets } from "@/assets";
 
 const cx = classNames.bind(styles);
 
-const About = () => {
+const About = ({ setPlayState }) => {
   return (
     <div className={cx("about")} id="about">
       <div className={cx("about-left")}>
         <img src={assets.about} className={cx("about-img")} />
-        <img src={assets.play_icon} className={cx("play-icon")} />
+        <img
+          src={assets.play_icon}
+          className={cx("play-icon")}
+          onClick={() => {
+            setPlayState(true);
+          }}
+        />
       </div>
       <div className={cx("about-right")}>
         <h3>ABOUT UNIVERSITY</h3>
