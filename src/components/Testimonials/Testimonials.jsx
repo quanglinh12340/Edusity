@@ -23,7 +23,7 @@ const Testimonials = () => {
     console.log(tx);
   };
   return (
-    <div className={cx("testimonials")}>
+    <div className={cx("testimonials")} id="testimonials">
       <img
         src={assets.next_icon}
         className={cx("next-btn")}

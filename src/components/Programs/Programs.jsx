@@ -6,7 +6,7 @@ const cx = classNames.bind(styles);
 
 const Programs = () => {
   return (
-    <div className={cx("programs")}>
+    <div className={cx("programs")} id="program">
       <div className={cx("program")}>
         <img src={assets.program_1} />
         <div className={cx("caption")}>

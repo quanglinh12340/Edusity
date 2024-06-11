@@ -31,7 +31,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className={cx("contact")}>
+    <div className={cx("contact")} id="contact">
       <div className={cx("contact-col")}>
         <h3>
           Send us a message <img src={assets.msg_icon} />{" "}

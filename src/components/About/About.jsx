@@ -4,9 +4,9 @@ import { assets } from "@/assets";
 
 const cx = classNames.bind(styles);
 
-const About = ({ subTitle, title }) => {
+const About = () => {
   return (
-    <div className={cx("about")}>
+    <div className={cx("about")} id="about">
       <div className={cx("about-left")}>
         <img src={assets.about} className={cx("about-img")} />
         <img src={assets.play_icon} className={cx("play-icon")} />

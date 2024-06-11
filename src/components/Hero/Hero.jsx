@@ -5,7 +5,7 @@ import { assets } from "@/assets";
 const cx = classNames.bind(styles);
 const Hero = () => {
   return (
-    <div className={cx("hero", "container")}>
+    <div className={cx("hero", "container")} id="hero">
       <div className={cx("hero-text")}>
         <h1>We Ensure better education for a better world</h1>
         <p>

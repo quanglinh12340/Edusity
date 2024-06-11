@@ -5,7 +5,7 @@ const cx = classNames.bind(styles);
 
 const Campus = () => {
   return (
-    <div className={cx("campus")}>
+    <div className={cx("campus")} id="campus">
       <div className={cx("gallery")}>
         <img src={assets.gallery_1} />
         <img src={assets.gallery_2} />
